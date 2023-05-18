@@ -46,14 +46,40 @@ The server will start running on http://localhost:8000/.
 The following endpoints are available in the API:
 
 ### Tasks
-Get all tasks
+#### Get all tasks
 ```bash
-GET /api/users/
+GET /tasks/api/v1/tasks/
 ```
 This endpoint retrieves all the registered tasks in the system.
 
-Create a new task
+#### Create a new task
 ```bash
-POST /api/users/
+POST /tasks/api/v1/tasks/
 ```
-This endpoint retrieves all the registered tasks in the system.
+Allows creating a new task in the system. The following parameters must be provided in the request body:
+
+- `title`: (string) The title of the task.
+- `description`: (string) The description of the task.
+- `done`: (boolean) The status of the task.
+
+#### Get a task by ID
+```bash
+GET /tasks/api/v1/tasks/{id}/
+```
+Returns the details of a specific task identified by their ID.
+
+#### Update one task
+```bash
+PUT /tasks/api/v1/tasks/{id}/
+```
+Allows update a task in the system. The following parameters must be provided in the request body:
+
+- `title`: (string) The title of the task.
+- `description`: (string) The description of the task.
+- `done`: (boolean) The status of the task.
+
+#### Delete one task
+```bash
+DELETE /tasks/api/v1/tasks/{id}/
+```
+Allows delete a task in the system.
