@@ -83,3 +83,7 @@ Allows update a task in the system. The following parameters must be provided in
 DELETE /tasks/api/v1/tasks/{id}/
 ```
 Allows delete a task in the system.
+
+And so on!
+
+Contributions
