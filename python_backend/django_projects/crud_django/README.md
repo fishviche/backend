@@ -1,6 +1,6 @@
 # Django REST API Documentation
 
-This repository contains the documentation for the Django REST API. This REST API make CRUD basic operations to create, get, update and delete tasks. It provides detailed information about available endpoints, required parameters, expected responses, and usage examples.
+This repository contains the documentation for the Django REST API. This REST API make an example of a CRUD basic operations to create, get, update and delete tasks. It provides detailed information about available endpoints, required parameters, expected responses, and usage examples.
 
 ## Installation
 
